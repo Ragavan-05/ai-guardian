@@ -1,0 +1,118 @@
+.full-map-page {
+  min-height: 100vh;
+  background: #07111f;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.full-map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.full-map-header h2 {
+  color: #42bfff;
+}
+
+.full-map-header button {
+  padding: 12px 18px;
+  border: 1px solid #258dff;
+  background: #102c49;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.full-map-header span {
+  color: #42e6a4;
+}
+
+/* LOCATION DETAILS PANEL */
+.full-map-details {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background: #102238;
+  border: 2px solid #258dff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1000;
+}
+
+.full-map-details h3 {
+  color: #42bfff;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.full-map-details p {
+  color: #ffffff;
+  font-size: 15px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.full-map-details hr {
+  border: 0;
+  border-top: 1px solid #31516f;
+  margin: 15px 0;
+}
+
+/* MAP */
+.full-map-container {
+  height: 70vh;
+  min-height: 400px;
+  border: 2px solid #258dff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .full-map-page {
+    padding: 12px;
+  }
+
+  .full-map-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .full-map-container {
+    height: 65vh;
+  }
+}
+.location-map-link {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: #ff3030;
+  text-decoration: underline;
+  margin-top: 22px;
+  padding: 15px;
+  border: 2px solid #ff3030;
+  border-radius: 10px;
+  background: rgba(255, 48, 48, 0.08);
+  transition: 0.3s ease;
+}
+
+.location-map-link:hover {
+  color: #ffffff;
+  background: #ff3030;
+  box-shadow: 0 0 18px rgba(255, 48, 48, 0.6);
+}
+
+@media (max-width: 600px) {
+  .location-map-link {
+    font-size: 19px;
+  }
+}
